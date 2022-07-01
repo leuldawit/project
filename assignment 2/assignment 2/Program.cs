@@ -8,7 +8,7 @@
        no = Convert.ToInt32(Console.ReadLine());
 
         for (int i = 0; i < no; i++) {
-            Console.WriteLine("Enter  Number " + i + 1);
+            Console.Write("Enter  Number " + i + 1);
 
             number = Convert.ToInt32(Console.ReadLine());
             if (number < 0)
