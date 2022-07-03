@@ -1,0 +1,16 @@
+C:\Users\Leul\Documents\C#\main\main\bin\Debug\main.exe.config
+C:\Users\Leul\Documents\C#\main\main\bin\Debug\main.exe
+C:\Users\Leul\Documents\C#\main\main\bin\Debug\main.pdb
+C:\Users\Leul\Documents\C#\main\main\obj\Debug\main.csproj.AssemblyReference.cache
+C:\Users\Leul\Documents\C#\main\main\obj\Debug\main.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leul\Documents\C#\main\main\obj\Debug\main.csproj.CoreCompileInputs.cache
+C:\Users\Leul\Documents\C#\main\main\obj\Debug\main.exe
+C:\Users\Leul\Documents\C#\main\main\obj\Debug\main.pdb
+C:\Users\Leul\Documents\main\main\bin\Debug\main.exe.config
+C:\Users\Leul\Documents\main\main\bin\Debug\main.exe
+C:\Users\Leul\Documents\main\main\bin\Debug\main.pdb
+C:\Users\Leul\Documents\main\main\obj\Debug\main.csproj.AssemblyReference.cache
+C:\Users\Leul\Documents\main\main\obj\Debug\main.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leul\Documents\main\main\obj\Debug\main.csproj.CoreCompileInputs.cache
+C:\Users\Leul\Documents\main\main\obj\Debug\main.exe
+C:\Users\Leul\Documents\main\main\obj\Debug\main.pdb
