@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,10 @@
             this.butn_add = new System.Windows.Forms.Button();
             this.butn_canel = new System.Windows.Forms.Button();
             this.butn_reset = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +87,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(236, 22);
             this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 10, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 16, 11, 15, 37, 0);
             // 
             // text_number
             // 
@@ -124,7 +129,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(606, 275);
+            this.label6.Location = new System.Drawing.Point(678, 275);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 8;
@@ -148,7 +153,7 @@
             // text_price
             // 
             this.text_price.BackColor = System.Drawing.Color.White;
-            this.text_price.Location = new System.Drawing.Point(579, 312);
+            this.text_price.Location = new System.Drawing.Point(630, 312);
             this.text_price.Name = "text_price";
             this.text_price.Size = new System.Drawing.Size(161, 22);
             this.text_price.TabIndex = 11;
@@ -190,12 +195,28 @@
             this.butn_reset.UseVisualStyleBackColor = false;
             this.butn_reset.Click += new System.EventHandler(this.butn_reset_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 446);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(867, 246);
+            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(897, 501);
+            this.ClientSize = new System.Drawing.Size(893, 704);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.butn_reset);
             this.Controls.Add(this.butn_canel);
             this.Controls.Add(this.butn_add);
@@ -214,6 +235,8 @@
             this.ForeColor = System.Drawing.Color.IndianRed;
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,6 +259,8 @@
         private System.Windows.Forms.Button butn_add;
         private System.Windows.Forms.Button butn_canel;
         private System.Windows.Forms.Button butn_reset;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
