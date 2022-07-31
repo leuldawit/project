@@ -9,3 +9,4 @@ C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.cspr
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.csproj.CoreCompileInputs.cache
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.exe
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.pdb
+C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.loginform.resources

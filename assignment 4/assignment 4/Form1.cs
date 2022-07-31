@@ -15,9 +15,11 @@ namespace assignment_4
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string name)
         {
+           
             InitializeComponent();
+            welcome_lbl.Text += name;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -44,8 +46,14 @@ namespace assignment_4
             Regex object_error = new Regex(@"[a-z A-Z]{" + text_objectname.Text.Length + @"}");
             Regex count_error = new Regex(@"[0-9]{" + text_count.Text.Length + @"}");
             Regex price_error = new Regex(@"[0-9]{" + text_price.Text.Length + @"}");
-           
-           
+
+            string message = " ";
+            foreach (var item in chk_options.CheckedItems)
+            {
+                message += item.ToString()+" ";
+            }
+            MessageBox.Show(message);
+
             errorProvider1.SetError(text_price, null);
             errorProvider1.SetError(text_count, null);
             errorProvider1.SetError(text_objectname, null);
@@ -55,13 +63,22 @@ namespace assignment_4
             if ((text_number.Text.Length != 0 && text_IN.Text.Length != 0 && text_objectname.Text.Length != 0 && text_count.Text.Length != 0 && text_price.Text.Length != 0) && (number_error.IsMatch(text_number.Text) && inventory_error.IsMatch(text_IN.Text) && object_error.IsMatch(text_objectname.Text) && count_error.IsMatch(text_count.Text) && price_error.IsMatch(text_price.Text)))
             
             {
+                  
                
+
                     p.number = text_number.Text;
                     p.date = dateTimePicker1.Value;
                     p.inventoryNumber = text_IN.Text;
                     p.objectname = text_objectname.Text;
                     p.count = text_count.Text;
                     p.price = text_price.Text;
+
+                if (cash_rbtn.Checked) p.payment = "cash";
+                else p.payment = "money";
+                
+                if (eth_rbtn.Checked) p.location = "Addis ababa";
+                else p.location = "other";
+                    
                     p.save();
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = product.getallproducts();
@@ -125,12 +142,7 @@ namespace assignment_4
                     errorProvider1.SetError(text_price, "please enter a number only "); 
                     }
 
-
-
-
                 }
-            
-               
             
 
         }
@@ -143,11 +155,11 @@ namespace assignment_4
         private void butn_reset_Click(object sender, EventArgs e)
         {
               text_number.Text="";
-            dateTimePicker1.Value =DateTime.Now;
-           text_IN.Text = "";
-            text_objectname.Text =  "";
-          text_count.Text = "";
-           text_price.Text = "";
+              dateTimePicker1.Value =DateTime.Now;
+              text_IN.Text = "";
+              text_objectname.Text =  "";
+              text_count.Text = "";
+              text_price.Text = "";
             errorProvider1.SetError(text_price, null);
             errorProvider1.SetError(text_count, null);
             errorProvider1.SetError(text_objectname, null);
@@ -161,6 +173,23 @@ namespace assignment_4
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void welcome_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logout_butn_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            loginform loginpage=new loginform();
+            loginpage.Show();
         }
     }
 }

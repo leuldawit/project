@@ -17,8 +17,11 @@ namespace assignment_4.Model
             public string objectname { get; set; }
             public string count { get; set; }
             public string price { get; set; }
+        // public  Boolean isavailable { get; set; }
+        public string payment { get; set; }
+        public string location { get; set; }
 
-            public void save()
+        public void save()
             {
                  products.Add(this);    
                  
