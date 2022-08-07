@@ -22,8 +22,8 @@ namespace assignment_4
            
             if (password_txt.Text == "admin" && username_txt.Text == "admin")
             {
-                Form1 screen = new Form1(username_txt.Text);
-                screen.Show();
+                Form1 form = new Form1();
+                form.Show();
                 Hide();
 
             }
@@ -41,6 +41,11 @@ namespace assignment_4
         }
 
         private void loginform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

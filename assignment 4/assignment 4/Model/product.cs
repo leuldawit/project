@@ -10,24 +10,33 @@ namespace assignment_4.Model
     internal class product
     {
         static List<product> products = new List<product>();
-       
-            public string number { get; set; }
-            public DateTime date { get; set; }
-            public string inventoryNumber { get; set; }
-            public string objectname { get; set; }
-            public string count { get; set; }
-            public string price { get; set; }
+
+        public string number { get; set; }
+        public DateTime date { get; set; }
+        public string inventoryNumber { get; set; }
+        public string objectname { get; set; }
+        public string count { get; set; }
+        public double price { get; set; }
         // public  Boolean isavailable { get; set; }
         public string payment { get; set; }
         public string location { get; set; }
 
         public void save()
-            {
-                 products.Add(this);    
-                 
-               
-            
-             }
+        {
+            products.Add(this);
+
+
+
+        }
+        public static List<product> findbyname(string name)
+        { 
+                return products.FindAll(p=> p.objectname==name); 
+
+        }
+        public static List< product> findbyPrice(double price)
+        {
+            return products.FindAll(p => p.price == price);
+        }
         public static List<product> getallproducts() 
         { 
             return products;    

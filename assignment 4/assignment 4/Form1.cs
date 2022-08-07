@@ -15,11 +15,11 @@ namespace assignment_4
 {
     public partial class Form1 : Form
     {
-        public Form1(string name)
+        public Form1()
         {
            
             InitializeComponent();
-            welcome_lbl.Text += name;
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace assignment_4
             errorProvider1.SetError(text_IN, null);
             errorProvider1.SetError(text_number, null);
 
-            if ((text_number.Text.Length != 0 && text_IN.Text.Length != 0 && text_objectname.Text.Length != 0 && text_count.Text.Length != 0 && text_price.Text.Length != 0) && (number_error.IsMatch(text_number.Text) && inventory_error.IsMatch(text_IN.Text) && object_error.IsMatch(text_objectname.Text) && count_error.IsMatch(text_count.Text) && price_error.IsMatch(text_price.Text)))
+            if ((text_number.Text.Length != 0 && text_IN.Text.Length != 0 && text_objectname.Text.Length != 0 && text_count.Text.Length != 0 && text_price.Text.Length != 0) && (number_error.IsMatch(text_number.Text) && inventory_error.IsMatch(text_IN.Text) && object_error.IsMatch(text_objectname.Text) && count_error.IsMatch(text_count.Text)/* && price_error.IsMatch(text_price.Text)*/))
             
             {
                   
@@ -71,7 +71,7 @@ namespace assignment_4
                     p.inventoryNumber = text_IN.Text;
                     p.objectname = text_objectname.Text;
                     p.count = text_count.Text;
-                    p.price = text_price.Text;
+                    p.price = Convert.ToDouble(text_price.Text);
 
                 if (cash_rbtn.Checked) p.payment = "cash";
                 else p.payment = "money";
