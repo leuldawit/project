@@ -13,3 +13,18 @@ C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.logi
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.mdi.resources
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.updateform.resources
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.deleteform.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\bin\Debug\assignment 4.exe.config
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\bin\Debug\assignment 4.exe
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\bin\Debug\assignment 4.pdb
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.csproj.AssemblyReference.cache
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.deleteform.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.Form1.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.loginform.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.mdi.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.Properties.Resources.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment_4.updateform.resources
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.csproj.GenerateResource.cache
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.csproj.CoreCompileInputs.cache
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.exe
+C:\Users\Leul\Documents\GitHub\project1\assignment 4\assignment 4\obj\Debug\assignment 4.pdb

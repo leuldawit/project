@@ -36,7 +36,15 @@ namespace assignment_4
 
         private void delete_btn_Click_1(object sender, EventArgs e)
         {
-            SearchDataGridView.Rows.RemoveAt(selectedRow);
+          
+            product p = new product();
+            DataGridViewRow newdata = SearchDataGridView.Rows[selectedRow];
+            newdata.Cells[0].Value = "";
+            newdata.Cells[1].Value = "";
+            newdata.Cells[2].Value = "";
+            newdata.Cells[3].Value = "";
+            newdata.Cells[4].Value = "";
+            newdata.Cells[5].Value = "";
         }
     }
 }
