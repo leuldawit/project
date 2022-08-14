@@ -67,5 +67,20 @@ namespace assignment_4
                 delete.Show();
             }
         }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+
+            else
+            {
+                Form2 list = new Form2();
+                list.MdiParent = this;
+                list.Show();
+            }
+        }
     }
 }
