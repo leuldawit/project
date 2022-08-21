@@ -50,9 +50,9 @@
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.Location = new System.Drawing.Point(126, 119);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(43, 18);
+            this.lbl_date.Size = new System.Drawing.Size(56, 18);
             this.lbl_date.TabIndex = 1;
-            this.lbl_date.Text = "Date";
+            this.lbl_date.Text = "$Price";
             // 
             // lbl_price
             // 
@@ -60,9 +60,9 @@
             this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_price.Location = new System.Drawing.Point(126, 169);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(56, 18);
+            this.lbl_price.Size = new System.Drawing.Size(43, 18);
             this.lbl_price.TabIndex = 2;
-            this.lbl_price.Text = "$Price";
+            this.lbl_price.Text = "Date";
             // 
             // productcard
             // 

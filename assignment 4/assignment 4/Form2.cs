@@ -19,45 +19,63 @@ namespace assignment_4
             display_panel.Controls.Clear();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Lavender;
-            panel1.Top = 140;
+
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            panel1.BackColor=Color.Red;
-            panel1.Top = 170;
+            panel1.BackColor = Color.PaleGoldenrod;
+          
         }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
-            panel1.BackColor= Color.Teal;
-          
+            panel1.BackColor = Color.AliceBlue;
+            
+
+        }
+
+
+        private void Form2_Load(object sender, EventArgs e)
+        
+        {
+           
             display_panel.Controls.Clear();
             foreach (var item in product.getallproducts())
             {
-                productcard pc = new productcard();
 
-
+                /* productcard pc = new productcard(item.objectname, item.date.ToString(), item.price.ToString());
+                */productcard pc = new productcard();
                 pc.title = item.objectname;
                 pc.date = item.date.ToString();
                 pc.price = item.price.ToString();
+                /* pc.Click += productcard_click;
+                */
+                pc.Click += (object o, EventArgs e2) =>
+                {
+                    /*MessageBox.Show(pc.title);
+                    */
+                    DetailPage dp = new DetailPage();
+                    dp.title =item.objectname;
+                    dp.date = item.date.ToString();
+                    dp.price = item.price.ToString();
+                    dp.number=item.number.ToString();
+                    dp.count=item.count.ToString(); 
+                    dp.inventoryNumber=item.inventoryNumber.ToString();
+                    dp.Show();
+                };
 
                 display_panel.Controls.Add(pc);
             }
-            
-
-
         }
-       
-
-            private void Form2_Load(object sender, EventArgs e)
+        private void productcard_click (object o, EventArgs e)
         {
-            
+            MessageBox.Show("custom clicked");
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -68,20 +86,9 @@ namespace assignment_4
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void display_panel_Paint(object sender, PaintEventArgs e)
         {
-            productcard pc = new productcard();
-            display_panel.Controls.Clear();
-            foreach (var item in product.getallproducts())
-            {
 
-
-                pc.title = item.objectname;
-                pc.date = item.date.ToString();
-                pc.price = item.price.ToString();
-
-                display_panel.Controls.Add(pc);
-            }
         }
     }
 }

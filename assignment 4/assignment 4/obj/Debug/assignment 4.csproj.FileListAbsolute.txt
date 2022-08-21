@@ -15,3 +15,4 @@ C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.cspr
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.exe
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment 4.pdb
 C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.Form2.resources
+C:\Users\Leul\Documents\C#\assignment 4\assignment 4\obj\Debug\assignment_4.DetailPage.resources

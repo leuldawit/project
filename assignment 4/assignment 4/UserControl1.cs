@@ -17,22 +17,33 @@ namespace assignment_4
         public String title
         {
             get { return lbl_title.Text; }
-            set { lbl_title.Text += value; }
+            set { lbl_title.Text +=" "+ value; }
         }
         public String price
         {
             get { return lbl_price.Text; }
-            set { lbl_price.Text += value; }
+            set { lbl_price.Text += " "+value; }
 
         }
         public String date
         {
             get { return lbl_date.Text; }
-            set { lbl_date.Text += value; }
+            set { lbl_date.Text +=" "+ value; }
         }
         public productcard()
         {
             InitializeComponent();
+        }
+
+            public productcard(String name,string price,string date)
+        {
+            InitializeComponent();
+            /*InitializeComponent();
+            */
+            this.title = name;
+            this.price = price;
+            this.date = date;
+
         }
 
         private void productcard_Load(object sender, EventArgs e)

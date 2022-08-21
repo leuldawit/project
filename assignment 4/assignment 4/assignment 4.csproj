@@ -52,6 +52,12 @@
     <Compile Include="deleteform.Designer.cs">
       <DependentUpon>deleteform.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailPage.Designer.cs">
+      <DependentUpon>DetailPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="deleteform.resx">
       <DependentUpon>deleteform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailPage.resx">
+      <DependentUpon>DetailPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

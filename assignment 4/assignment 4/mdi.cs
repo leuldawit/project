@@ -82,5 +82,10 @@ namespace assignment_4
                 list.Show();
             }
         }
+
+        private void mdi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
