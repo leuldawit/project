@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToDBform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddToDBform.Designer.cs">
+      <DependentUpon>AddToDBform.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="DetailPage.Designer.cs">
       <DependentUpon>DetailPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayFromDbform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayFromDbform.Designer.cs">
+      <DependentUpon>DisplayFromDbform.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -97,11 +109,17 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddToDBform.resx">
+      <DependentUpon>AddToDBform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="deleteform.resx">
       <DependentUpon>deleteform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailPage.resx">
       <DependentUpon>DetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayFromDbform.resx">
+      <DependentUpon>DisplayFromDbform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

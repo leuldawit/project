@@ -99,6 +99,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(236, 22);
             this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.Value = new System.DateTime(2022, 7, 16, 11, 15, 37, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // text_number
             // 

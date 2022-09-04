@@ -101,6 +101,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "deleteform";
             this.Text = "deleteform";
+            this.Load += new System.EventHandler(this.deleteform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SearchDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

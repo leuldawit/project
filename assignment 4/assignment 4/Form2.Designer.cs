@@ -97,13 +97,15 @@
             // 
             // productcard1
             // 
-            this.productcard1.date = "$Price $Price $Price $Price DateDateDateDateDateDateDateDateDateDate";
+            this.productcard1.date = "$Price $Price $Price $Price $Price DateDateDateDateDateDateDateDateDateDate";
             this.productcard1.Location = new System.Drawing.Point(3, 3);
             this.productcard1.Name = "productcard1";
-            this.productcard1.price = "Date Date Date Date $Price$Price$Price$Price$Price$Price$Price$Price$Price$Price";
+            this.productcard1.price = "Date Date Date Date Date $Price$Price$Price$Price$Price$Price$Price$Price$Price$P" +
+    "rice";
             this.productcard1.Size = new System.Drawing.Size(598, 250);
             this.productcard1.TabIndex = 0;
-            this.productcard1.title = "Title Title Title Title TitleTitleTitleTitleTitleTitleTitleTitleTitleTitle";
+            this.productcard1.title = "Title Title Title Title Title TitleTitleTitleTitleTitleTitleTitleTitleTitleTitle";
+            this.productcard1.Load += new System.EventHandler(this.productcard1_Load_1);
             // 
             // Form2
             // 

@@ -38,5 +38,10 @@ namespace assignment_4
         {
             SearchDataGridView.Rows.RemoveAt(selectedRow);
         }
+
+        private void deleteform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

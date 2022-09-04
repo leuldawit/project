@@ -38,6 +38,8 @@
             this.catagoreyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.displayFromDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +92,9 @@
             // catagoreyToolStripMenuItem
             // 
             this.catagoreyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem});
+            this.addToolStripMenuItem,
+            this.addToDatabaseToolStripMenuItem,
+            this.displayFromDatabaseToolStripMenuItem});
             this.catagoreyToolStripMenuItem.Name = "catagoreyToolStripMenuItem";
             this.catagoreyToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.catagoreyToolStripMenuItem.Text = "Display";
@@ -98,7 +102,7 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.addToolStripMenuItem.Text = "Display All";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -113,6 +117,20 @@
             this.menuStrip1.Size = new System.Drawing.Size(1109, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // displayFromDatabaseToolStripMenuItem
+            // 
+            this.displayFromDatabaseToolStripMenuItem.Name = "displayFromDatabaseToolStripMenuItem";
+            this.displayFromDatabaseToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.displayFromDatabaseToolStripMenuItem.Text = "Display from Database";
+            this.displayFromDatabaseToolStripMenuItem.Click += new System.EventHandler(this.displayFromDatabaseToolStripMenuItem_Click);
+            // 
+            // addToDatabaseToolStripMenuItem
+            // 
+            this.addToDatabaseToolStripMenuItem.Name = "addToDatabaseToolStripMenuItem";
+            this.addToDatabaseToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.addToDatabaseToolStripMenuItem.Text = "Add to Database";
+            this.addToDatabaseToolStripMenuItem.Click += new System.EventHandler(this.addToDatabaseToolStripMenuItem_Click);
             // 
             // mdi
             // 
@@ -146,5 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem catagoreyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem displayFromDatabaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToDatabaseToolStripMenuItem;
     }
 }

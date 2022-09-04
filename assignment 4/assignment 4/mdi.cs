@@ -87,5 +87,38 @@ namespace assignment_4
         {
 
         }
+
+        private void displayFromDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+
+            else
+            {
+                /* DisplayFromDbform db = new DisplayFromDbform();
+                 db.MdiParent = this;
+                 db.Show();*/
+                Form2 f2 = new Form2();
+                f2.MdiParent = this;
+                f2.Show();
+            }
+        }
+
+        private void addToDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+
+            else
+            {
+                AddToDBform db = new AddToDBform();
+                db.MdiParent = this;
+                db.Show();
+            }
+        }
     }
 }

@@ -66,18 +66,16 @@ namespace assignment_4
                   
                
 
-                    p.number = text_number.Text;
+                    p.PID = Convert.ToInt32(text_number.Text);
                     p.date = dateTimePicker1.Value;
-                    p.inventoryNumber = text_IN.Text;
                     p.objectname = text_objectname.Text;
-                    p.count = text_count.Text;
-                    p.price = Convert.ToDouble(text_price.Text);
+                    p.price = Convert.ToInt32(text_price.Text);
 
-                if (cash_rbtn.Checked) p.payment = "cash";
+               /* if (cash_rbtn.Checked) p.payment = "cash";
                 else p.payment = "money";
                 
                 if (eth_rbtn.Checked) p.location = "Addis ababa";
-                else p.location = "other";
+                else p.location = "other";*/
                     
                     p.save();
                     dataGridView1.DataSource = null;
@@ -190,6 +188,11 @@ namespace assignment_4
             Dispose();
             loginform loginpage=new loginform();
             loginpage.Show();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

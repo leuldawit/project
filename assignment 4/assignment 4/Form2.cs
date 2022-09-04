@@ -63,10 +63,10 @@ namespace assignment_4
                     dp.title =item.objectname;
                     dp.date = item.date.ToString();
                     dp.price = item.price.ToString();
-                    dp.number=item.number.ToString();
+                    /*dp.number=item.number.ToString();
                     dp.count=item.count.ToString(); 
                     dp.inventoryNumber=item.inventoryNumber.ToString();
-                    dp.Show();
+                    */dp.Show();
                 };
 
                 display_panel.Controls.Add(pc);
@@ -87,6 +87,11 @@ namespace assignment_4
         }
 
         private void display_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void productcard1_Load_1(object sender, EventArgs e)
         {
 
         }
